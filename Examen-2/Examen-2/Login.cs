@@ -22,19 +22,19 @@ namespace Examen_2
 
         private void AceptarButton_Click(object sender, EventArgs e)
         {
-            UsuarioPA usuarioPA = new UsuarioPA();
+            UsuarioDatos usuarioDatos = new UsuarioDatos();
             Usuario usuario = new Usuario();
 
-            usuario = usuarioPA.Login(UsuarioTextBox.Text, ClaveTextBox.Text);
+            usuario = usuarioDatos.ValidarUsuario(UsuarioTextBox.Text, ClaveTextBox.Text);
 
             if (usuario == null)
             {
-                MessageBox.Show("Datos incorrectos");
+                MessageBox.Show("Datos de usuario incorrectos");
                 return;
             }
 
-            MenuVista menuVista = new MenuVista();
-            menuVista.Show();
+            MenuForm menuForm = new MenuForm();
+            menuForm.Show();
             this.Hide();
         }
     }

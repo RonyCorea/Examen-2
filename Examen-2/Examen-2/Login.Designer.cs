@@ -43,7 +43,6 @@
             this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(171, 20);
             this.ClaveTextBox.TabIndex = 17;
-            this.ClaveTextBox.Text = "123456";
             // 
             // UsuarioTextBox
             // 
@@ -51,7 +50,6 @@
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(171, 20);
             this.UsuarioTextBox.TabIndex = 16;
-            this.UsuarioTextBox.Text = "RCOREA";
             // 
             // label2
             // 
